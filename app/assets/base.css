@@ -1,0 +1,112 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+@plugin "daisyui/theme" {
+  name: "axelLight";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+  
+  --color-base-100: oklch(92% 0.006 264.531);
+  --color-base-200: oklch(70% 0.022 261.325);
+  --color-base-300: oklch(55% 0.027 264.364);
+  --color-base-content: oklch(21% 0.006 285.885);
+  --color-primary: oklch(57% 0.245 27.325);
+  --color-primary-content: oklch(93% 0.034 272.788);
+  --color-secondary: oklch(54% 0.245 262.881);
+  --color-secondary-content: oklch(94% 0.028 342.258);
+  --color-accent: oklch(87% 0.006 286.286);
+  --color-accent-content: oklch(38% 0.063 188.416);
+  --color-neutral: oklch(55% 0.016 285.938);
+  --color-neutral-content: oklch(92% 0.004 286.32);
+  --color-info: oklch(70% 0.165 254.624);
+  --color-info-content: oklch(29% 0.066 243.157);
+  --color-success: oklch(62% 0.194 149.214);
+  --color-success-content: oklch(37% 0.077 168.94);
+  --color-warning: oklch(82% 0.189 84.429);
+  --color-warning-content: oklch(41% 0.112 45.904);
+  --color-error: oklch(70% 0.191 22.216);
+  --color-error-content: oklch(27% 0.105 12.094);
+  --radius-selector: 0.25rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 0.5px;
+  --depth: 0;
+  --noise: 1;
+}
+
+:root{
+    --default-font-family: "Rubik", sans-serif;
+}
+
+
+@plugin "daisyui/theme" {
+  name: "axelDark";
+  default: false;
+  prefersdark: true;
+  color-scheme: "dark";
+  --color-base-100: oklch(12% 0.042 264.695);
+  --color-base-200: oklch(20% 0.042 265.755);
+  --color-base-300: oklch(27% 0.041 260.031);
+  --color-base-content: oklch(96% 0.007 247.896);
+  --color-primary: oklch(57% 0.245 27.325);
+  --color-primary-content: oklch(25% 0.092 26.042);
+  --color-secondary: oklch(54% 0.245 262.881);
+  --color-secondary-content: oklch(28% 0.091 267.935);
+  --color-accent: oklch(0% 0 0);
+  --color-accent-content: oklch(100% 0 0);
+  --color-neutral: oklch(20% 0.042 265.755);
+  --color-neutral-content: oklch(98% 0.003 247.858);
+  --color-info: oklch(70% 0.165 254.624);
+  --color-info-content: oklch(29% 0.066 243.157);
+  --color-success: oklch(59% 0.145 163.225);
+  --color-success-content: oklch(27% 0.046 192.524);
+  --color-warning: oklch(82% 0.189 84.429);
+  --color-warning-content: oklch(27% 0.077 45.635);
+  --color-error: oklch(70% 0.191 22.216);
+  --color-error-content: oklch(25% 0.092 26.042);
+  --radius-selector: 0.25rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 0.5px;
+  --depth: 0;
+  --noise: 1;
+}
+
+@theme{
+
+
+
+    /* Utopia steps */
+  --step--2: clamp(0.69rem, 0.67rem + 0.09vw, 0.75rem);
+  --step--1: clamp(0.83rem, 0.80rem + 0.16vw, 0.94rem);
+  --step-0: clamp(1.00rem, 0.96rem + 0.22vw, 1.17rem);
+  --step-1: clamp(1.20rem, 1.15rem + 0.29vw, 1.46rem);
+  --step-2: clamp(1.44rem, 1.37rem + 0.37vw, 1.83rem);
+  --step-3: clamp(1.73rem, 1.64rem + 0.46vw, 2.29rem);
+  --step-4: clamp(2.07rem, 1.96rem + 0.57vw, 2.86rem);
+  --step-5: clamp(2.49rem, 2.35rem + 0.70vw, 3.58rem);
+
+  --text-step-xs: var(--step--2);
+  --text-step-sm: var(--step--1);
+  --text-step-normal: var(--step-0);
+  --text-step-md: var(--step-1);
+  --text-step-lg: var(--step-2);
+  --text-step-xl: var(--step-3);
+  --text-step-2xl: var(--step-4);
+  --text-step-3xl: var(--step-5);
+
+  --space-xs: var(--step--2);
+  --space-sm: var(--step--1);
+  --space-md: var(--step-0);
+  --space-lg: var(--step-1);
+  --space-xl: var(--step-2);
+  --space-2xl: var(--step-3);
+  --space-3xl: var(--step-4);
+}
