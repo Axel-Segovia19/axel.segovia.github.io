@@ -8,18 +8,22 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
-  typescript:{
-    typeCheck:true
+  typescript: {
+    typeCheck: true,
   },
 
   css: ["~/assets/base.css"],
-  modules: ["@nuxt/icon", "@nuxt/fonts"],
-
+  modules: ["@nuxt/icon", "@nuxt/fonts", "@nuxt/eslint"],
+  eslint: {
+    config: {
+      standalone: false,
+    },
+  },
   icon: {
     customCollections: [
       {
-        prefix: 'ci',
-        dir: './app/assets/icons',
+        prefix: "ci",
+        dir: "./app/assets/icons",
       },
     ],
     collections: ["mdi"],
@@ -29,11 +33,12 @@ export default defineNuxtConfig({
     },
   },
   fonts: {
-    provider: 'google',
+    provider: "google",
     families: [
       {
-        name: "Rubik", weights: [400, 500, 600, 700, 800]
-      }
+        name: "Rubik",
+        weights: [400, 500, 600, 700, 800],
+      },
     ],
   },
 });
