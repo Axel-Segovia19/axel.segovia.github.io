@@ -3,7 +3,9 @@
 <template>
   <div class="card bg-base-200 size-full">
     <div class="card-body">
-      <ul class="list flex-row flex-wrap gap-[var(--space-sm)] mt-2 text-step-sm items-center justify-center h-full">
+      <ul
+        class="list flex-row flex-wrap gap-[var(--space-sm)] mt-2 text-step-sm items-center justify-center h-full"
+      >
         <li class="flex items-center gap-2">
           <icon name="mdi:language-javascript" class="text-yellow-500" />
           Javascript
@@ -22,9 +24,7 @@
         <li class="flex items-center gap-2">
           <icon name="mdi:vuejs" class="text-green-500" /> Vue
         </li>
-        <li class="flex items-center gap-2">
-          <icon name="mdi:nuxt" class="text-lime-500" /> Nuxt
-        </li>
+        <li class="flex items-center gap-2"><icon name="mdi:nuxt" class="text-lime-500" /> Nuxt</li>
         <li class="flex items-center gap-2">
           <icon name="mdi:docker" class="text-blue-500" /> Docker
         </li>
