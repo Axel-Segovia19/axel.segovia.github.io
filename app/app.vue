@@ -40,7 +40,7 @@ function switchTheme() {
           <my-skills />
         </div>
       </div>
-      <div class="card flex flex-row gap-[var(--space-sm)] w-full overflow-x-auto shadow rounded">
+      <div class="flex flex-row gap-[var(--space-sm)] w-full overflow-x-auto shadow rounded">
         <experience-view />
       </div>
     </div>
