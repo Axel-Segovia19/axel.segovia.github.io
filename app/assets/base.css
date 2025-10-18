@@ -3,45 +3,48 @@
 
 
 
+
+
 @plugin "daisyui/theme" {
   name: "axelLight";
   default: true;
   prefersdark: false;
   color-scheme: "light";
-  
-  --color-base-100: oklch(92% 0.006 264.531);
-  --color-base-200: oklch(70% 0.022 261.325);
-  --color-base-300: oklch(55% 0.027 264.364);
-  --color-base-content: oklch(21% 0.006 285.885);
-  --color-primary: oklch(57% 0.245 27.325);
-  --color-primary-content: oklch(93% 0.034 272.788);
-  --color-secondary: oklch(54% 0.245 262.881);
-  --color-secondary-content: oklch(94% 0.028 342.258);
-  --color-accent: oklch(87% 0.006 286.286);
-  --color-accent-content: oklch(38% 0.063 188.416);
-  --color-neutral: oklch(55% 0.016 285.938);
-  --color-neutral-content: oklch(92% 0.004 286.32);
-  --color-info: oklch(70% 0.165 254.624);
-  --color-info-content: oklch(29% 0.066 243.157);
-  --color-success: oklch(62% 0.194 149.214);
-  --color-success-content: oklch(37% 0.077 168.94);
-  --color-warning: oklch(82% 0.189 84.429);
-  --color-warning-content: oklch(41% 0.112 45.904);
-  --color-error: oklch(70% 0.191 22.216);
-  --color-error-content: oklch(27% 0.105 12.094);
+  --color-base-100: oklch(98% 0.001 106.423);
+  --color-base-200: oklch(97% 0.001 106.424);
+  --color-base-300: oklch(92% 0.003 48.717);
+  --color-base-content: oklch(21% 0.006 56.043);
+  --color-primary: oklch(76% 0.177 163.223);
+  --color-primary-content: oklch(26% 0.051 172.552);
+  --color-secondary: oklch(70% 0.183 293.541);
+  --color-secondary-content: oklch(28% 0.141 291.089);
+  --color-accent: oklch(74% 0.238 322.16);
+  --color-accent-content: oklch(29% 0.136 325.661);
+  --color-neutral: oklch(21% 0.006 56.043);
+  --color-neutral-content: oklch(98% 0.001 106.423);
+  --color-info: oklch(60% 0.126 221.723);
+  --color-info-content: oklch(98% 0.019 200.873);
+  --color-success: oklch(59% 0.145 163.225);
+  --color-success-content: oklch(97% 0.021 166.113);
+  --color-warning: oklch(66% 0.179 58.318);
+  --color-warning-content: oklch(98% 0.022 95.277);
+  --color-error: oklch(58% 0.253 17.585);
+  --color-error-content: oklch(96% 0.015 12.422);
   --radius-selector: 0.25rem;
   --radius-field: 0.5rem;
-  --radius-box: 1rem;
+  --radius-box: 0.25rem;
   --size-selector: 0.25rem;
   --size-field: 0.25rem;
-  --border: 0.5px;
+  --border: 1px;
   --depth: 0;
   --noise: 1;
 }
 
+
 :root{
     --default-font-family: "Rubik", sans-serif;
 }
+
 
 
 @plugin "daisyui/theme" {
@@ -53,31 +56,32 @@
   --color-base-200: oklch(20% 0.042 265.755);
   --color-base-300: oklch(27% 0.041 260.031);
   --color-base-content: oklch(96% 0.007 247.896);
-  --color-primary: oklch(57% 0.245 27.325);
-  --color-primary-content: oklch(25% 0.092 26.042);
-  --color-secondary: oklch(54% 0.245 262.881);
-  --color-secondary-content: oklch(28% 0.091 267.935);
-  --color-accent: oklch(0% 0 0);
-  --color-accent-content: oklch(100% 0 0);
-  --color-neutral: oklch(20% 0.042 265.755);
+  --color-primary: oklch(59% 0.145 163.225);
+  --color-primary-content: oklch(97% 0.021 166.113);
+  --color-secondary: oklch(58% 0.253 17.585);
+  --color-secondary-content: oklch(96% 0.015 12.422);
+  --color-accent: oklch(58% 0.158 241.966);
+  --color-accent-content: oklch(97% 0.013 236.62);
+  --color-neutral: oklch(37% 0.044 257.287);
   --color-neutral-content: oklch(98% 0.003 247.858);
-  --color-info: oklch(70% 0.165 254.624);
-  --color-info-content: oklch(29% 0.066 243.157);
-  --color-success: oklch(59% 0.145 163.225);
-  --color-success-content: oklch(27% 0.046 192.524);
-  --color-warning: oklch(82% 0.189 84.429);
-  --color-warning-content: oklch(27% 0.077 45.635);
-  --color-error: oklch(70% 0.191 22.216);
-  --color-error-content: oklch(25% 0.092 26.042);
+  --color-info: oklch(68% 0.169 237.323);
+  --color-info-content: oklch(97% 0.013 236.62);
+  --color-success: oklch(70% 0.14 182.503);
+  --color-success-content: oklch(98% 0.014 180.72);
+  --color-warning: oklch(76% 0.188 70.08);
+  --color-warning-content: oklch(98% 0.022 95.277);
+  --color-error: oklch(63% 0.237 25.331);
+  --color-error-content: oklch(97% 0.013 17.38);
   --radius-selector: 0.25rem;
-  --radius-field: 0.5rem;
-  --radius-box: 1rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.25rem;
   --size-selector: 0.25rem;
   --size-field: 0.25rem;
-  --border: 0.5px;
+  --border: 1px;
   --depth: 0;
   --noise: 1;
 }
+
 
 @theme{
 
@@ -110,4 +114,8 @@
   --space-xl: var(--step-2);
   --space-2xl: var(--step-3);
   --space-3xl: var(--step-4);
+}
+
+.card{
+  @apply shadow bg-base-300
 }

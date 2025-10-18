@@ -9,5 +9,5 @@ export default withNuxt(
       semi: false,
       quotes: 'single',
     },
-  })
+  }),
 )

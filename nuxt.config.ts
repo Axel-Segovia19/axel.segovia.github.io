@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/base.css'],
-  modules: ['@nuxt/icon', '@nuxt/fonts', '@nuxt/eslint'],
+  modules: ['@nuxt/icon', '@nuxt/fonts', '@nuxt/eslint', '@nuxthub/core'],
   eslint: {
     config: {
       standalone: false,

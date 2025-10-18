@@ -1,5 +1,5 @@
 <template>
-  <div class="card bg-base-200 size-full">
+  <div class="card size-full">
     <div class="card-body">
       <ul
         class="list grid grid-flow-col-dense grid-rows-2 gap-[var(--space-sm)] items-center h-full text-step-sm"

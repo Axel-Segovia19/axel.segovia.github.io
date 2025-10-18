@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="card bg-base-200 size-full">
+  <div class="card size-full">
     <div class="card-body">
       <ul
         class="list flex-row flex-wrap gap-[var(--space-sm)] mt-2 text-step-sm items-center justify-center h-full"

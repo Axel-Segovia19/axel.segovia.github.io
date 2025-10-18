@@ -1,5 +1,5 @@
 <template>
-  <div class="card bg-base-200 size-full">
+  <div class="card size-full">
     <div class="card-body">
       <p class="text-step-md text-center">
         Hey! Im Axel, I've always had a love for technology and problem solving. Growing up I spent
