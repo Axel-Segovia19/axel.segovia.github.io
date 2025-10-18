@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const theme = ref('axelLight')
-
 function switchTheme() {
   theme.value = theme.value === 'axelLight' ? 'axelDark' : 'axelLight'
 }
