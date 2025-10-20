@@ -1,9 +1,3 @@
-<script setup lang="ts">
-const theme = ref('axelLight')
-function switchTheme() {
-  theme.value = theme.value === 'axelLight' ? 'axelDark' : 'axelLight'
-}
-</script>
 
 <template>
   <main class="w-screen min-h-screen flex justify-center items-center">
@@ -15,17 +9,14 @@ function switchTheme() {
           class="rounded-xl w-full max-w-sm shadow md:self-start self-center"
         />
         <div class="flex flex-col gap-[var(--space-sm)]">
-          <div class="card w-full">
+          <div class="card bg-base-200 w-full">
             <div class="card-body flex-row items-center justify-between">
               <div class="card-title text-step-2xl">
                 <span class="">Axel Segovia</span>
               </div>
-              <input
-                type="checkbox"
-                :value="theme"
-                class="toggle theme-controller"
-                @click="switchTheme"
-              />
+              <div>
+                <social-drawer />
+              </div>
             </div>
           </div>
           <about-me />

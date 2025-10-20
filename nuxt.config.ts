@@ -8,10 +8,6 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
-  typescript: {
-    typeCheck: true,
-  },
-
   css: ['~/assets/base.css'],
   modules: ['@nuxt/icon', '@nuxt/fonts', '@nuxt/eslint', '@nuxthub/core'],
   eslint: {
