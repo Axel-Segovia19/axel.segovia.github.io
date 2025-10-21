@@ -1,7 +1,7 @@
 <template>
   <div class="drawer drawer-end">
     <input id="my-drawer-5" type="checkbox" class="drawer-toggle" />
-    <div class="drawer-content space-x-4">
+    <div class="drawer-content space-x-2 whitespace-nowrap">
       <label for="my-drawer-5" class="drawer-button btn btn-ghost btn-link">
         <icon name="mdi:share-variant" size="32" />
       </label>
