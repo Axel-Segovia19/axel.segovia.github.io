@@ -1,121 +1,62 @@
-@import "tailwindcss";
-@plugin "daisyui";
+@import 'tailwindcss';
+@import '@nuxt/ui';
 
+@theme static {
+  --color-crimson-50: #fff1f1;
+  --color-crimson-100: #ffdede;
+  --color-crimson-200: #ffbdbd;
+  --color-crimson-300: #ff8d8d;
+  --color-crimson-400: #f95c5c;
+  --color-crimson-500: #ee2c2c;
+  --color-crimson-600: #c91414;
+  --color-crimson-700: #a80f0f;
+  --color-crimson-800: #8b0e0e;
+  --color-crimson-900: #731212;
+  --color-crimson-950: #3f0505;
 
+  --color-violet-50: #f6f3ff;
+  --color-violet-100: #ede8ff;
+  --color-violet-200: #ddd4ff;
+  --color-violet-300: #c2b0ff;
+  --color-violet-400: #a484fc;
+  --color-violet-500: #8a5cf6;
+  --color-violet-600: #7236e8;
+  --color-violet-700: #5f25cc;
+  --color-violet-800: #4f1fa8;
+  --color-violet-900: #3f1a88;
+  --color-violet-950: #220d52;
 
-
-
-@plugin "daisyui/theme" {
-  name: "axelLight";
-  default: true;
-  prefersdark: false;
-  color-scheme: "light";
-  --color-base-100: oklch(98% 0.001 106.423);
-  --color-base-200: oklch(97% 0.001 106.424);
-  --color-base-300: oklch(92% 0.003 48.717);
-  --color-base-content: oklch(21% 0.006 56.043);
-  --color-primary: oklch(76% 0.177 163.223);
-  --color-primary-content: oklch(26% 0.051 172.552);
-  --color-secondary: oklch(70% 0.183 293.541);
-  --color-secondary-content: oklch(28% 0.141 291.089);
-  --color-accent: oklch(74% 0.238 322.16);
-  --color-accent-content: oklch(29% 0.136 325.661);
-  --color-neutral: oklch(21% 0.006 56.043);
-  --color-neutral-content: oklch(98% 0.001 106.423);
-  --color-info: oklch(60% 0.126 221.723);
-  --color-info-content: oklch(98% 0.019 200.873);
-  --color-success: oklch(59% 0.145 163.225);
-  --color-success-content: oklch(97% 0.021 166.113);
-  --color-warning: oklch(66% 0.179 58.318);
-  --color-warning-content: oklch(98% 0.022 95.277);
-  --color-error: oklch(58% 0.253 17.585);
-  --color-error-content: oklch(96% 0.015 12.422);
-  --radius-selector: 0.25rem;
-  --radius-field: 0.5rem;
-  --radius-box: 0.25rem;
-  --size-selector: 0.25rem;
-  --size-field: 0.25rem;
-  --border: 1px;
-  --depth: 0;
-  --noise: 1;
+  --color-cobalt-50: #eff6ff;
+  --color-cobalt-100: #dbeafe;
+  --color-cobalt-200: #bfdbfe;
+  --color-cobalt-300: #93c5fd;
+  --color-cobalt-400: #60a5fa;
+  --color-cobalt-500: #3b82f6;
+  --color-cobalt-600: #1e56d9;
+  --color-cobalt-700: #1847b8;
+  --color-cobalt-800: #1a3b96;
+  --color-cobalt-900: #1a3275;
+  --color-cobalt-950: #121f4a;
 }
 
-
-:root{
-    --default-font-family: "Rubik", sans-serif;
+:root {
+  --ui-primary: var(--ui-color-primary-600);
+  --ui-secondary: var(--ui-color-secondary-600);
+  --ui-radius: 0.375rem;
+  --ui-bg: var(--ui-color-neutral-50);
+  --ui-bg-muted: var(--ui-color-neutral-100);
+  --ui-border-muted: var(--ui-color-neutral-150);
 }
 
-
-
-@plugin "daisyui/theme" {
-  name: "axelDark";
-  default: false;
-  prefersdark: true;
-  color-scheme: "dark";
-  --color-base-100: oklch(12% 0.042 264.695);
-  --color-base-200: oklch(20% 0.042 265.755);
-  --color-base-300: oklch(27% 0.041 260.031);
-  --color-base-content: oklch(96% 0.007 247.896);
-  --color-primary: oklch(59% 0.145 163.225);
-  --color-primary-content: oklch(97% 0.021 166.113);
-  --color-secondary: oklch(58% 0.253 17.585);
-  --color-secondary-content: oklch(96% 0.015 12.422);
-  --color-accent: oklch(58% 0.158 241.966);
-  --color-accent-content: oklch(97% 0.013 236.62);
-  --color-neutral: oklch(37% 0.044 257.287);
-  --color-neutral-content: oklch(98% 0.003 247.858);
-  --color-info: oklch(68% 0.169 237.323);
-  --color-info-content: oklch(97% 0.013 236.62);
-  --color-success: oklch(70% 0.14 182.503);
-  --color-success-content: oklch(98% 0.014 180.72);
-  --color-warning: oklch(76% 0.188 70.08);
-  --color-warning-content: oklch(98% 0.022 95.277);
-  --color-error: oklch(63% 0.237 25.331);
-  --color-error-content: oklch(97% 0.013 17.38);
-  --radius-selector: 0.25rem;
-  --radius-field: 0.25rem;
-  --radius-box: 0.25rem;
-  --size-selector: 0.25rem;
-  --size-field: 0.25rem;
-  --border: 1px;
-  --depth: 0;
-  --noise: 1;
+.dark {
+  --ui-primary: var(--ui-color-primary-400);
+  --ui-secondary: var(--ui-color-secondary-400);
+  --ui-bg: var(--ui-color-neutral-950);
+  --ui-bg-muted: var(--ui-color-neutral-900);
+  --ui-border-muted: var(--ui-color-neutral-800);
 }
 
-
-@theme{
-
-  --breakpoint-xs: 30rem;
-
-
-    /* Utopia steps */
-  --step--2: clamp(0.69rem, 0.67rem + 0.09vw, 0.75rem);
-  --step--1: clamp(0.83rem, 0.80rem + 0.16vw, 0.94rem);
-  --step-0: clamp(1.00rem, 0.96rem + 0.22vw, 1.17rem);
-  --step-1: clamp(1.20rem, 1.15rem + 0.29vw, 1.46rem);
-  --step-2: clamp(1.44rem, 1.37rem + 0.37vw, 1.83rem);
-  --step-3: clamp(1.73rem, 1.64rem + 0.46vw, 2.29rem);
-  --step-4: clamp(2.07rem, 1.96rem + 0.57vw, 2.86rem);
-  --step-5: clamp(2.49rem, 2.35rem + 0.70vw, 3.58rem);
-
-  --text-step-xs: var(--step--2);
-  --text-step-sm: var(--step--1);
-  --text-step-normal: var(--step-0);
-  --text-step-md: var(--step-1);
-  --text-step-lg: var(--step-2);
-  --text-step-xl: var(--step-3);
-  --text-step-2xl: var(--step-4);
-  --text-step-3xl: var(--step-5);
-
-  --space-xs: var(--step--2);
-  --space-sm: var(--step--1);
-  --space-md: var(--step-0);
-  --space-lg: var(--step-1);
-  --space-xl: var(--step-2);
-  --space-2xl: var(--step-3);
-  --space-3xl: var(--step-4);
-}
-
-.card{
-  @apply shadow bg-base-300
+body {
+  background-color: var(--ui-bg);
+  color: var(--ui-text);
 }

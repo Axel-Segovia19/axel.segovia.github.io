@@ -7,12 +7,20 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-
+  ssr: false,
   css: ['~/assets/base.css'],
-  modules: ['@nuxt/icon', '@nuxt/fonts', '@nuxt/eslint', '@nuxthub/core'],
+  modules: ['@nuxt/ui', '@nuxt/eslint', '@nuxthub/core', 'motion-v/nuxt', '@vueuse/nuxt'],
+  experimental: {
+    viteEnvironmentApi: true,
+  },
   eslint: {
     config: {
       standalone: false,
+    },
+  },
+  runtimeConfig: {
+    public: {
+      webFormAccessKey: 'replace-me',
     },
   },
   icon: {
